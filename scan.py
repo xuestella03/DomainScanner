@@ -14,11 +14,13 @@ class DomainScanner:
         :return: results as dictionary
         """
         results = {
-            "scan_time": time.time(),
-            "domain": domain
+            "scan_time": time.time()
         }
 
+
         # now do the actual scans here once the scanners are implemented
+
+        return results
 
     def scan_from_file(self, input_file: str, output_file: str) -> None:
         """
