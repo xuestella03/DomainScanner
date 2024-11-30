@@ -1,11 +1,17 @@
 import json
+import sys
 import time
 from typing import Dict, Any, List
 from pathlib import Path
 
+# from domain_scanner import DomainScanner
+import sys
+sys.path.append(str(Path(__file__).parent / "src"))
+from domain_scanner.scanners.dns_scanner import DNSScanner
+
 class DomainScanner:
     def __init__(self):
-        pass
+        self.dns_scanner = DNSScanner()
 
     # check naming of this next one. should it be scan.py?
     def scan_domain(self, domain:str) -> Dict[str, Any]:
@@ -19,6 +25,11 @@ class DomainScanner:
 
 
         # now do the actual scans here once the scanners are implemented
+        try:
+            ipv4_addr = self.dns_scanner.get_ipv4_addr(domain)
+            results["ipv4_addr"] = ipv4_addr
+        except Exception as e:
+            print(f"error ipv4: {e}", file=sys.stderr)
 
         return results
 
