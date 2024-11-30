@@ -31,6 +31,12 @@ class DomainScanner:
         except Exception as e:
             print(f"error ipv4: {e}", file=sys.stderr)
 
+        try:
+            ipv6_addr = self.dns_scanner.get_ipv6_addr(domain)
+            results["ipv6_addr"] = ipv6_addr
+        except Exception as e:
+            print(f"error ipv6: {e}", file=sys.stderr)
+
         return results
 
     def scan_from_file(self, input_file: str, output_file: str) -> None:
