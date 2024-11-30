@@ -4,7 +4,9 @@ from .base import Base
 
 class DNSScanner(Base):
     def __init__(self):
-        self.dns_resolvers = []
+
+        # change this to read the file
+        self.dns_resolvers = ["8.8.8.8", "99.99.99.193"]
 
     def get_ipv4_addr(self, domain: str) -> List[str]:
         """
@@ -13,11 +15,11 @@ class DNSScanner(Base):
         :return: list of ipv4 addr as strings
         """
         ip_addresses = set()
-        output = self.dns_lookup(domain, "8.8.8.8", "ipv4")
-        ip_addresses.update(output)
-        # for r in self.dns_resolvers:
-        #     output = self.dns_lookup(domain, r, "ipv4")
-        #     ip_addresses.update(output)
+        # output = self.dns_lookup(domain, "8.8.8.8", "ipv4")
+        # ip_addresses.update(output)
+        for r in self.dns_resolvers:
+            output = self.dns_lookup(domain, r, "ipv4")
+            ip_addresses.update(output)
 
         return list(ip_addresses)
 
