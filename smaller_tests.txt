@@ -1,2 +1,3 @@
 ebay.com
 google.com
+http://insecure.stevetarzia.com/

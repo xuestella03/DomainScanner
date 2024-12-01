@@ -1,234 +1,27 @@
 {
-    "amazon.com": {
-        "http_server": "Server",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 54.239.28.85"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070639.2356048
-    },
-    "asee.org": {
-        "http_server": "Microsoft-Azure-Application-Gateway/v2",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070656.6387904
-    },
-    "auditoryneuroscience.com": {
-        "http_server": "Apache/2.4.58 (Ubuntu)",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070654.9396198
-    },
-    "clocktab.com": {
-        "http_server": "cloudflare",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 2606:4700:3033::6815:57b0"
-        ],
-        "ipv6_addresses": [
-            " 2606:4700:3035::ac43:aa7c"
-        ],
-        "scan_time": 1733070653.9812794
-    },
-    "en.wikipedia.org": {
-        "http_server": "HAProxy",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 2620:0:863:ed1a::1"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070636.8976266
-    },
-    "facebook.com": {
-        "http_server": "proxygen-bolt",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 2a03:2880:f101:83:face:b00c:0:25de"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070638.6669376
-    },
-    "fandom.com": {
-        "http_server": "Varnish",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 199.232.208.194"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070642.038895
-    },
-    "gradeinflation.com": {
-        "http_server": "nginx",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070657.9814143
-    },
-    "illinois.edu": {
-        "http_server": "Apache/2.4.57 (Red Hat Enterprise Linux) OpenSSL/3.0.7",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 2620:0:e00:4206::14"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070651.7770402
-    },
-    "imdb.com": {
-        "http_server": "Server",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 52.94.225.248"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070640.9033735
-    },
-    "instagram.com": {
-        "http_server": "proxygen-bolt",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 2a03:2880:f201:e5:face:b00c:0:4420"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070642.7240064
-    },
-    "it.eecs.northwestern.edu": {
-        "http_server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070649.4170284
-    },
-    "kellogg.northwestern.edu": {
-        "http_server": "Microsoft-IIS/10.0",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070646.7697997
-    },
-    "kli.org": {
-        "http_server": "cloudflare",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 2606:4700:3035::ac43:8448"
-        ],
-        "ipv6_addresses": [
-            " 2606:4700:3035::ac43:8448"
-        ],
-        "scan_time": 1733070660.6869032
-    },
-    "mccormick.northwestern.edu": {
-        "http_server": "Apache/2.4.41 (Ubuntu)",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070645.6124568
-    },
-    "northwestern.edu": {
-        "http_server": "BigIP",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070644.1643434
-    },
-    "pinterest.com": {
-        "http_server": null,
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 151.101.0.84"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070642.263374
-    },
-    "pmichaud.com": {
-        "http_server": "Apache",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070659.3940284
-    },
-    "reddit.com": {
-        "http_server": "snooserv",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 2a04:4e42:200::396"
-        ],
-        "ipv6_addresses": [
-            " 2a04:4e42:400::396"
-        ],
-        "scan_time": 1733070640.6359234
-    },
-    "spacejam.com": {
-        "http_server": "Apache/2.4.62 () OpenSSL/1.0.2k-fips",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 99.83.180.228"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070658.8331804
-    },
-    "stevetarzia.com": {
-        "http_server": "Apache/2.4.62 () OpenSSL/1.0.2k-fips PHP/5.4.16",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070652.8899784
-    },
-    "tripadvisor.com": {
-        "http_server": "Varnish",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 151.101.130.28"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070642.4699392
-    },
-    "twitter.com": {
-        "http_server": "tsa_b",
-        "insecure_http": true,
-        "ipv4_addresses": [
-            " 104.244.42.1"
-        ],
-        "ipv6_addresses": [],
-        "scan_time": 1733070637.7423065
-    },
-    "uchicago.edu": {
-        "http_server": "Apache",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070650.6505494
-    },
-    "users.cs.northwestern.edu": {
-        "http_server": "Apache",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070648.0897937
-    },
-    "walmart.com": {
+    "ebay.com": {
         "http_server": "AkamaiGHost",
         "insecure_http": true,
-        "ipv4_addresses": [],
+        "ipv4_addresses": [
+            " 23.67.33.31"
+        ],
         "ipv6_addresses": [],
-        "scan_time": 1733070643.472393
+        "scan_time": 1733071421.9513953
     },
-    "yelp.com": {
-        "http_server": "Varnish",
-        "insecure_http": true,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "scan_time": 1733070639.9909973
-    },
-    "youtube.com": {
-        "http_server": "ESF",
+    "google.com": {
+        "http_server": "gws",
         "insecure_http": true,
         "ipv4_addresses": [
             " 2607:f8b0:400a:805::200e"
         ],
         "ipv6_addresses": [],
-        "scan_time": 1733070636.5647895
+        "scan_time": 1733071422.305214
+    },
+    "http://insecure.stevetarzia.com/": {
+        "http_server": null,
+        "insecure_http": false,
+        "ipv4_addresses": [],
+        "ipv6_addresses": [],
+        "scan_time": 1733071422.624449
     }
 }
