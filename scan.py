@@ -57,8 +57,20 @@ class DomainScanner:
             results["insecure_http"] = insecure_http
         except Exception as e:
             print(f"error insecure http: {e}", file=sys.stderr)
+
         # 5.6: redirect_to_https
+        try:
+            redirect_to_https = self.http_scanner.redirect_to_https(domain)
+            results["redirect_to_https"] = redirect_to_https
+        except Exception as e:
+            print(f"error redirect to https: {e}", file=sys.stderr)
+
         # 5.7: hsts
+        try:
+            hsts = self.http_scanner.hsts(domain)
+            results["hsts"] = hsts
+        except Exception as e:
+            print(f"error hsts: {e}", file=sys.stderr)
         # 5.8: tls_versions
         # 5.9:
         # 5.10:
