@@ -5,8 +5,10 @@ from .base import Base
 class DNSScanner(Base):
     def __init__(self):
 
-        # change this to read the file
-        self.dns_resolvers = ["208.67.222.222","1.1.1.1", "8.8.8.8", "8.26.56.26"]
+        super().__init__()
+
+        # change this to read file
+        self.dns_resolvers = ["8.8.8.8"]
 
     def get_ipv4_addr(self, domain: str) -> List[str]:
         """
@@ -56,6 +58,7 @@ class DNSScanner(Base):
 
         # parse the output
         addresses = []
+        # if command_output:
         for line in command_output.splitlines():
             # skip if empty
             if not line.strip():

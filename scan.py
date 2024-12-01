@@ -8,10 +8,12 @@ from pathlib import Path
 import sys
 sys.path.append(str(Path(__file__).parent / "src"))
 from domain_scanner.scanners.dns_scanner import DNSScanner
+from domain_scanner.scanners.http_scanner import HTTPScanner
 
 class DomainScanner:
     def __init__(self):
         self.dns_scanner = DNSScanner()
+        self.http_scanner = HTTPScanner()
 
     # check naming of this next one. should it be scan.py?
     def scan_domain(self, domain:str) -> Dict[str, Any]:
@@ -19,23 +21,44 @@ class DomainScanner:
         :param domain:
         :return: results as dictionary
         """
+
+        # 5.1: scan_time
         results = {
             "scan_time": time.time()
         }
 
 
-        # now do the actual scans here once the scanners are implemented
+        # now do the actual scans here
+
+        # 5.2: ipv4_addresses
         try:
             ipv4_addr = self.dns_scanner.get_ipv4_addr(domain)
-            results["ipv4_addr"] = ipv4_addr
+            results["ipv4_addresses"] = ipv4_addr
         except Exception as e:
             print(f"error ipv4: {e}", file=sys.stderr)
 
+        # 5.3: ipv5_addresses
         try:
             ipv6_addr = self.dns_scanner.get_ipv6_addr(domain)
-            results["ipv6_addr"] = ipv6_addr
+            results["ipv6_addresses"] = ipv6_addr
         except Exception as e:
             print(f"error ipv6: {e}", file=sys.stderr)
+
+        # 5.4: http_server
+        try:
+            http_server = self.http_scanner.http_server(domain)
+            results["http_server"] = http_server
+        except Exception as e:
+            print(f"error http server: {e}", file=sys.stderr)
+
+        # 5.5: insecure_http
+        # 5.6: redirect_to_https
+        # 5.7: hsts
+        # 5.8: tls_versions
+        # 5.9:
+        # 5.10:
+        # 5.11:
+        # 5.12:
 
         return results
 

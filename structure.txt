@@ -1,0 +1,19 @@
+(delete this or move to readme later)
+
+DomainScanner/
+├── .venv/
+├── src/
+│   └── domain_scanner/
+│       ├── __init__.py
+│       ├── scanners/
+│       │   ├── base.py
+│       │   ├── dns_scanner.py
+│       │   └── http_scanner.py
+│       └── utils/
+│           not sure what goes in here
+├── requirements.txt
+├── .gitignore
+├── outputs.json
+├── scan.py
+├── setup.py
+└── README.md
