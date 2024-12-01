@@ -52,6 +52,11 @@ class DomainScanner:
             print(f"error http server: {e}", file=sys.stderr)
 
         # 5.5: insecure_http
+        try:
+            insecure_http = self.http_scanner.insecure_http(domain)
+            results["insecure_http"] = insecure_http
+        except Exception as e:
+            print(f"error insecure http: {e}", file=sys.stderr)
         # 5.6: redirect_to_https
         # 5.7: hsts
         # 5.8: tls_versions

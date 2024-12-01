@@ -60,7 +60,43 @@ class HTTPScanner(Base):
         :param domain:
         :return: boolean
         """
-        pass
+        
+        # unencrypted HTTP requests will be on port 80.
+        # so check if the connection succeeds on port 80.
+        # if it doesn't will be HTTPS
+        # send get request
+        request = f"GET / HTTP/1.1\r\n"
+        request += f"Host: {domain}\r\n"
+        request += f"User-Agent: Mozilla/5.0\r\n"
+        request += f"Accept: */*\r\n"
+        request += f"Connection: close\r\n\r\n"
+
+        try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.settimeout(2)
+            sock.connect((domain, 80))
+            sock.send(request.encode())
+
+            # iterate through received and add to the response
+            response = b""
+            while True:
+                chunk = sock.recv(4096)
+                if not chunk:
+                    break
+                response += chunk
+
+            if response:
+                return True
+            else:
+                return False
+
+        except socket.error:
+            pass
+
+        finally:
+            sock.close()
+
+        return False
 
     def redirect_to_https(self, domain: str):
         """
