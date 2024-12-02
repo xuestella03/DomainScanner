@@ -46,6 +46,8 @@ class MoreScanners(Base):
             command = ["nslookup", addr]
             result = self.run_command(command)
 
+            print(f"rdns result: {result}")
+
             if result:
                 for line in result.splitlines():
                     if "PTR" in line:

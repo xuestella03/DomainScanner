@@ -88,11 +88,13 @@ class DomainScanner:
             print(f"error root ca: {e}", file=sys.stderr)
 
         # 5.10: rdns_names
-        # try:
-        #     rdns_names = self.other_scanners.rdns_names(self.dns_scanner.get_ipv4_addr(domain))
-        #     results["rdns_names"] = rdns_names
-        # except Exception as e:
-        #     print(f"error rdns names: {e}", file=sys.stderr)
+        try:
+            ip_addresses = self.dns_scanner.get_ipv4_addr(domain)
+            rdns_names = self.other_scanners.rdns_names(ip_addresses)
+            results["rdns_names"] = rdns_names
+        except Exception as e:
+            print(f"error rdns names: {e}", file=sys.stderr)
+
         # 5.11:
         # 5.12:
 

@@ -1,20 +1,4 @@
 {
-    "amazon.com": {
-        "hsts": false,
-        "http_server": "Server",
-        "insecure_http": false,
-        "ipv4_addresses": [
-            " 54.239.28.85"
-        ],
-        "ipv6_addresses": [],
-        "redirect_to_https": true,
-        "root_ca": "DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root G2",
-        "scan_time": 1733180877.1070294,
-        "tls_versions": [
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
-    },
     "en.wikipedia.org": {
         "hsts": false,
         "http_server": "HAProxy",
@@ -23,107 +7,10 @@
             " 2620:0:861:ed1a::1"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt, CN = E6",
-        "scan_time": 1733180863.7911987,
-        "tls_versions": [
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
-    },
-    "facebook.com": {
-        "hsts": false,
-        "http_server": "proxygen-bolt",
-        "insecure_http": false,
-        "ipv4_addresses": [
-            " 2a03:2880:f357:1:face:b00c:0:25de"
-        ],
-        "ipv6_addresses": [],
-        "redirect_to_https": true,
-        "root_ca": "DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 High Assurance Server CA",
-        "scan_time": 1733180872.9631958,
-        "tls_versions": [
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
-    },
-    "fandom.com": {
-        "hsts": false,
-        "http_server": "Varnish",
-        "insecure_http": false,
-        "ipv4_addresses": [
-            " 199.232.208.194"
-        ],
-        "ipv6_addresses": [],
-        "redirect_to_https": true,
-        "root_ca": "GlobalSign nv-sa, CN = GlobalSign Atlas R3 DV TLS CA 2024 Q3",
-        "scan_time": 1733180894.2796319,
-        "tls_versions": [
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
-    },
-    "imdb.com": {
-        "hsts": false,
-        "http_server": "Server",
-        "insecure_http": false,
-        "ipv4_addresses": [
-            " 52.94.237.74"
-        ],
-        "ipv6_addresses": [],
-        "redirect_to_https": true,
-        "root_ca": "\"Starfield Technologies, Inc.\", CN = Starfield Services Root Certificate Authority - G2",
-        "scan_time": 1733180889.7278364,
-        "tls_versions": [
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
-    },
-    "pinterest.com": {
-        "hsts": false,
-        "http_server": "",
-        "insecure_http": false,
-        "ipv4_addresses": [
-            " 151.101.192.84"
-        ],
-        "ipv6_addresses": [],
-        "redirect_to_https": true,
-        "root_ca": "DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
-        "scan_time": 1733180898.450869,
-        "tls_versions": [
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
-    },
-    "reddit.com": {
-        "hsts": false,
-        "http_server": "snooserv",
-        "insecure_http": false,
-        "ipv4_addresses": [
-            " 2a04:4e42:600::396"
-        ],
-        "ipv6_addresses": [
-            " 2a04:4e42::396"
-        ],
-        "redirect_to_https": true,
-        "root_ca": "DigiCert Inc, CN = DigiCert TLS RSA SHA256 2020 CA1",
-        "scan_time": 1733180885.7262492,
-        "tls_versions": [
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
-    },
-    "tripadvisor.com": {
-        "hsts": false,
-        "http_server": "Varnish",
-        "insecure_http": false,
-        "ipv4_addresses": [
-            " 151.101.194.28"
-        ],
-        "ipv6_addresses": [],
-        "redirect_to_https": true,
-        "root_ca": "GlobalSign nv-sa, CN = GlobalSign RSA OV SSL CA 2018",
-        "scan_time": 1733180902.6139543,
+        "scan_time": 1733181924.140525,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -134,26 +21,13 @@
         "http_server": "tsa_b",
         "insecure_http": false,
         "ipv4_addresses": [
-            " 104.244.42.129"
+            " 104.244.42.65"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
-        "scan_time": 1733180868.274114,
-        "tls_versions": [
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
-    },
-    "yelp.com": {
-        "hsts": false,
-        "http_server": "Varnish",
-        "insecure_http": false,
-        "ipv4_addresses": [],
-        "ipv6_addresses": [],
-        "redirect_to_https": true,
-        "root_ca": "DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
-        "scan_time": 1733180881.5883434,
+        "scan_time": 1733181929.1778593,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -167,9 +41,10 @@
             " 2607:f8b0:4009:80b::200e"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "Google Trust Services LLC, CN = GTS Root R1",
-        "scan_time": 1733180859.6240485,
+        "scan_time": 1733181919.7411056,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
