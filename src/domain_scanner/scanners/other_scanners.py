@@ -1,6 +1,6 @@
 from typing import List, Optional, Tuple
 from .base import Base
-import maxminddb
+# import maxminddb
 
 class MoreScanners(Base):
     def __init__(self, geodb_path: str = "GeoLite2-City.mmdb"):
