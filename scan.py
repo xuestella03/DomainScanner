@@ -9,13 +9,14 @@ import sys
 sys.path.append(str(Path(__file__).parent / "src"))
 from domain_scanner.scanners.dns_scanner import DNSScanner
 from domain_scanner.scanners.http_scanner import HTTPScanner
+from domain_scanner.scanners.other_scanners import MoreScanners
 
 class DomainScanner:
     def __init__(self):
         self.dns_scanner = DNSScanner()
         self.http_scanner = HTTPScanner()
+        self.other_scanners = MoreScanners()
 
-    # check naming of this next one. should it be scan.py?
     def scan_domain(self, domain:str) -> Dict[str, Any]:
         """
         :param domain:
@@ -37,7 +38,7 @@ class DomainScanner:
         except Exception as e:
             print(f"error ipv4: {e}", file=sys.stderr)
 
-        # 5.3: ipv5_addresses
+        # 5.3: ipv6_addresses
         try:
             ipv6_addr = self.dns_scanner.get_ipv6_addr(domain)
             results["ipv6_addresses"] = ipv6_addr
@@ -71,9 +72,27 @@ class DomainScanner:
             results["hsts"] = hsts
         except Exception as e:
             print(f"error hsts: {e}", file=sys.stderr)
+
         # 5.8: tls_versions
-        # 5.9:
-        # 5.10:
+        try:
+            tls_versions = self.other_scanners.tls_versions(domain)
+            results["tls_versions"] = tls_versions
+        except Exception as e:
+            print(f"error tls versions: {e}", file=sys.stderr)
+
+        # 5.9: root_ca
+        try:
+            root_ca = self.other_scanners.root_ca(domain)
+            results["root_ca"] = root_ca
+        except Exception as e:
+            print(f"error root ca: {e}", file=sys.stderr)
+
+        # 5.10: rdns_names
+        # try:
+        #     rdns_names = self.other_scanners.rdns_names(self.dns_scanner.get_ipv4_addr(domain))
+        #     results["rdns_names"] = rdns_names
+        # except Exception as e:
+        #     print(f"error rdns names: {e}", file=sys.stderr)
         # 5.11:
         # 5.12:
 
