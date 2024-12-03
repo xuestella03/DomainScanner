@@ -95,7 +95,13 @@ class DomainScanner:
         except Exception as e:
             print(f"error rdns names: {e}", file=sys.stderr)
 
-        # 5.11:
+        # 5.11: rtt_range
+        try:
+            ip_addresses = self.dns_scanner.get_ipv4_addr(domain)
+            rtt_range = self.other_scanners.rtt_range(ip_addresses)
+            results["rtt_range"] = rtt_range
+        except Exception as e:
+            print(f"error rtt: {e}", file=sys.stderr)
         # 5.12:
 
         return results

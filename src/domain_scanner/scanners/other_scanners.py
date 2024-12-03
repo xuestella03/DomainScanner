@@ -46,17 +46,31 @@ class MoreScanners(Base):
             command = ["nslookup", addr]
             result = self.run_command(command)
 
-            print(f"rdns result: {result}")
+            # print(f"rdns result: {result}")
 
             if result:
                 for line in result.splitlines():
-                    if "PTR" in line:
+                    if line.lower().startswith("name"):
+                        # print("hello")
                         dns_name = line.strip().split()[-1]
-                        # Remove trailing dot if present
-                        dns_name = dns_name.rstrip('.')
+                        # print(f"dns name: {dns_name}")
                         res.append(dns_name)
-
         return res
+
+    def rtt_range(self, ip_addresses: List[str]):
+        min_time = float('inf')
+        max_time = 0
+        for addr in ip_addresses:
+            for port in ["80", "22", "443"]:
+                # command = ["sh", "-c", "\"time", "echo", "-e", "'\x1dclose\ x0d'", "|", "telnet", addr, port, "\""]
+                # command = ["sh -c \"time echo -e \'\\x1dclose\\x0d\' | telnet", addr, port, "\""]
+                # command = f'sh -c "time echo -e \'\\x1dclose\\x0d\' | telnet {addr} {port}"'
+                # command = f"sh -c \"time echo -e '\\x1dclose\\x0d' | telnet {addr} {port}\""
+                command = ["sh", "-c", f"time echo -e '\\x1dclose\\x0d' | telnet {addr} {port}"]
+                result = self.run_command(command)
+                print(result)
+
+        return [min_time, max_time]
 
     def geo_locations(self, ip_addresses: List[str]) -> List[str]:
         pass

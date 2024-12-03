@@ -7,10 +7,16 @@
             " 2620:0:861:ed1a::1"
         ],
         "ipv6_addresses": [],
-        "rdns_names": [],
+        "rdns_names": [
+            "text-lb.eqiad.wikimedia.org"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt, CN = E6",
-        "scan_time": 1733181924.140525,
+        "rtt_range": [
+            Infinity,
+            0
+        ],
+        "scan_time": 1733186489.507547,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -21,13 +27,17 @@
         "http_server": "tsa_b",
         "insecure_http": false,
         "ipv4_addresses": [
-            " 104.244.42.65"
+            " 104.244.42.1"
         ],
         "ipv6_addresses": [],
         "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
-        "scan_time": 1733181929.1778593,
+        "rtt_range": [
+            Infinity,
+            0
+        ],
+        "scan_time": 1733186494.410809,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -41,10 +51,16 @@
             " 2607:f8b0:4009:80b::200e"
         ],
         "ipv6_addresses": [],
-        "rdns_names": [],
+        "rdns_names": [
+            "ord30s22-in-x0e.1e100.net"
+        ],
         "redirect_to_https": true,
         "root_ca": "Google Trust Services LLC, CN = GTS Root R1",
-        "scan_time": 1733181919.7411056,
+        "rtt_range": [
+            Infinity,
+            0
+        ],
+        "scan_time": 1733186485.087306,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
