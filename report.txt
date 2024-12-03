@@ -1,0 +1,236 @@
+Report Summary
+
+Domain Information
+Domain: amazon.com
+  hsts: False
+  http_server: Server
+  insecure_http: False
+  ipv4_addresses: [' 205.251.242.103', ' 54.239.28.85', ' 52.94.236.248']
+  ipv6_addresses: []
+  rdns_names: ['s3-console-us-standard.console.aws.amazon.com']
+  redirect_to_https: False
+  root_ca: DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root G2
+  rtt_range: [1, 2]
+  scan_time: 1733191588.4866865
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: en.wikipedia.org
+  hsts: False
+  http_server: HAProxy
+  insecure_http: False
+  ipv4_addresses: [' 2620:0:861:ed1a::1']
+  ipv6_addresses: []
+  rdns_names: ['text-lb.eqiad.wikimedia.org']
+  redirect_to_https: False
+  root_ca: Let's Encrypt, CN = E6
+  rtt_range: [1, 2]
+  scan_time: 1733191546.3192797
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: facebook.com
+  hsts: False
+  http_server: proxygen-bolt
+  insecure_http: False
+  ipv4_addresses: [' 2a03:2880:f175:81:face:b00c:0:25de', ' 2a03:2880:f103:83:face:b00c:0:25de', ' 2a03:2880:f175:181:face:b00c:0:25de', ' 2a03:2880:f357:1:face:b00c:0:25de']
+  ipv6_addresses: []
+  rdns_names: ['edge-star-mini6-shv-01-ord5.facebook.com', 'edge-star-mini6-shv-01-iad3.facebook.com', 'edge-star-mini6-shv-03-ord5.facebook.com']
+  redirect_to_https: False
+  root_ca: DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 High Assurance Server CA
+  rtt_range: [1, 2]
+  scan_time: 1733191575.2295058
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: fandom.com
+  hsts: False
+  http_server: Varnish
+  insecure_http: False
+  ipv4_addresses: [' 199.232.208.194', ' 199.232.212.194']
+  ipv6_addresses: []
+  rdns_names: []
+  redirect_to_https: False
+  root_ca: GlobalSign nv-sa, CN = GlobalSign Atlas R3 DV TLS CA 2024 Q3
+  rtt_range: [1, 2]
+  scan_time: 1733191643.227415
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: imdb.com
+  hsts: False
+  http_server: Server
+  insecure_http: False
+  ipv4_addresses: [' 52.94.228.167', ' 52.94.225.248', ' 52.94.237.74']
+  ipv6_addresses: []
+  rdns_names: []
+  redirect_to_https: False
+  root_ca: "Starfield Technologies, Inc.", CN = Starfield Services Root Certificate Authority - G2
+  rtt_range: [1, 2]
+  scan_time: 1733191629.1850843
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: pinterest.com
+  hsts: False
+  http_server: 
+  insecure_http: False
+  ipv4_addresses: [' 151.101.0.84', ' 151.101.128.84', ' 151.101.64.84', ' 151.101.192.84']
+  ipv6_addresses: []
+  rdns_names: []
+  redirect_to_https: False
+  root_ca: DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+  rtt_range: [1, 2]
+  scan_time: 1733191656.0777442
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: reddit.com
+  hsts: False
+  http_server: snooserv
+  insecure_http: False
+  ipv4_addresses: [' 2a04:4e42:200::396', ' 2a04:4e42::396', ' 2a04:4e42:600::396', ' 2a04:4e42:400::396']
+  ipv6_addresses: [' 2a04:4e42:200::396', ' 2a04:4e42::396', ' 2a04:4e42:400::396']
+  rdns_names: []
+  redirect_to_https: False
+  root_ca: DigiCert Inc, CN = DigiCert TLS RSA SHA256 2020 CA1
+  rtt_range: [1, 2]
+  scan_time: 1733191615.9740767
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: tripadvisor.com
+  hsts: False
+  http_server: Varnish
+  insecure_http: False
+  ipv4_addresses: [' 151.101.194.28', ' 151.101.2.28', ' 151.101.66.28', ' 151.101.130.28']
+  ipv6_addresses: []
+  rdns_names: []
+  redirect_to_https: False
+  root_ca: GlobalSign nv-sa, CN = GlobalSign RSA OV SSL CA 2018
+  rtt_range: [1, 2]
+  scan_time: 1733191668.8285985
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: twitter.com
+  hsts: False
+  http_server: tsa_b
+  insecure_http: False
+  ipv4_addresses: [' 104.244.42.193']
+  ipv6_addresses: []
+  rdns_names: []
+  redirect_to_https: False
+  root_ca: DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+  rtt_range: [1, 2]
+  scan_time: 1733191560.1238105
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: yelp.com
+  hsts: False
+  http_server: Varnish
+  insecure_http: False
+  ipv4_addresses: []
+  ipv6_addresses: []
+  rdns_names: []
+  redirect_to_https: False
+  root_ca: DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+  rtt_range: [1, 2]
+  scan_time: 1733191602.6220906
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+Domain: youtube.com
+  hsts: False
+  http_server: ESF
+  insecure_http: False
+  ipv4_addresses: [' 2607:f8b0:4009:80a::200e', ' 2607:f8b0:4009:809::200e', ' 2607:f8b0:4009:806::200e', ' 2607:f8b0:4009:802::200e', ' 2607:f8b0:4004:c1f::be']
+  ipv6_addresses: [' 2607:f8b0:4004:c17::5b']
+  rdns_names: ['ord30s21-in-x0e.1e100.net', 'ord37s32-in-x0e.1e100.net', 'ord30s31-in-x0e.1e100.net', 'ww-in-f91.1e100.net', 'ord37s07-in-x0e.1e100.net', 'ord38s32-in-x0e.1e100.net']
+  redirect_to_https: False
+  root_ca: Google Trust Services LLC, CN = GTS Root R1
+  rtt_range: [1, 2]
+  scan_time: 1733191532.3123162
+  tls_versions: ['TLSv1.2', 'TLSv1.3']
+
+RTT Ranges
++------------------+--------------+--------------+
+| Domain           | Min RTT (ms) | Max RTT (ms) |
++------------------+--------------+--------------+
+| amazon.com       | 1            | 2            |
++------------------+--------------+--------------+
+| en.wikipedia.org | 1            | 2            |
++------------------+--------------+--------------+
+| facebook.com     | 1            | 2            |
++------------------+--------------+--------------+
+| fandom.com       | 1            | 2            |
++------------------+--------------+--------------+
+| imdb.com         | 1            | 2            |
++------------------+--------------+--------------+
+| pinterest.com    | 1            | 2            |
++------------------+--------------+--------------+
+| reddit.com       | 1            | 2            |
++------------------+--------------+--------------+
+| tripadvisor.com  | 1            | 2            |
++------------------+--------------+--------------+
+| twitter.com      | 1            | 2            |
++------------------+--------------+--------------+
+| yelp.com         | 1            | 2            |
++------------------+--------------+--------------+
+| youtube.com      | 1            | 2            |
++------------------+--------------+--------------+
+
+Root Certificate Authorities
++----------------------------------------------------------------+-------------+
+| Root CA                                                        | Occurrences |
++----------------------------------------------------------------+-------------+
+| DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1  | 3           |
++----------------------------------------------------------------+-------------+
+| DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root | 1           |
+| G2                                                             |             |
++----------------------------------------------------------------+-------------+
+| Let's Encrypt, CN = E6                                         | 1           |
++----------------------------------------------------------------+-------------+
+| DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 High   | 1           |
+| Assurance Server CA                                            |             |
++----------------------------------------------------------------+-------------+
+| GlobalSign nv-sa, CN = GlobalSign Atlas R3 DV TLS CA 2024 Q3   | 1           |
++----------------------------------------------------------------+-------------+
+| "Starfield Technologies, Inc.", CN = Starfield Services Root   | 1           |
+| Certificate Authority - G2                                     |             |
++----------------------------------------------------------------+-------------+
+| DigiCert Inc, CN = DigiCert TLS RSA SHA256 2020 CA1            | 1           |
++----------------------------------------------------------------+-------------+
+| GlobalSign nv-sa, CN = GlobalSign RSA OV SSL CA 2018           | 1           |
++----------------------------------------------------------------+-------------+
+| Google Trust Services LLC, CN = GTS Root R1                    | 1           |
++----------------------------------------------------------------+-------------+
+
+HTTP Server Occurrences
++---------------+-------------+
+| HTTP Server   | Occurrences |
++---------------+-------------+
+| Varnish       | 3           |
++---------------+-------------+
+| Server        | 2           |
++---------------+-------------+
+| HAProxy       | 1           |
++---------------+-------------+
+| proxygen-bolt | 1           |
++---------------+-------------+
+|               | 1           |
++---------------+-------------+
+| snooserv      | 1           |
++---------------+-------------+
+| tsa_b         | 1           |
++---------------+-------------+
+| ESF           | 1           |
++---------------+-------------+
+
+Feature Support
++----------------+------------+
+| Feature        | Percentage |
++----------------+------------+
+| plain_http     | 0.00%      |
++----------------+------------+
+| https_redirect | 0.00%      |
++----------------+------------+
+| hsts           | 0.00%      |
++----------------+------------+
+| ipv6           | 18.18%     |
++----------------+------------+
+| TLSv1.2        | 100.00%    |
++----------------+------------+
+| TLSv1.3        | 100.00%    |
++----------------+------------+

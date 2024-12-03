@@ -1,5 +1,6 @@
 from typing import List, Optional, Tuple
 from .base import Base
+import time
 import re
 import subprocess
 # import maxminddb
@@ -60,8 +61,8 @@ class MoreScanners(Base):
         return res
 
     def rtt_range(self, ip_addresses: List[str]):
-        # min_time = float('inf')
-        # max_time = 0
+        min_time = float('inf')
+        max_time = 0
         # for addr in ip_addresses:
         #     for port in ["80", "22", "443"]:
         #         # command = ["sh", "-c", "\"time", "echo", "-e", "'\x1dclose\ x0d'", "|", "telnet", addr, port, "\""]
@@ -91,7 +92,30 @@ class MoreScanners(Base):
         #         #     max_time = max(max_time, rtt)
         #
         # return [min_time, max_time]
-        pass
+        # pass
+        for addr in ip_addresses:
+            try:
+                ports = [443, 80, 22]
+                for p in ports:
+                    try:
+                        start = time.time()
+
+                        command = f"sh -c 'time echo -e \"\\x1dclose\\x0d\" | telnet {addr} {p}'"
+                        result = subprocess.run(command, shell=True, timeout=2, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+                        end = time.time()
+
+                        rtt = (end - start) * 1000
+                        min_time = min(min_time, rtt)
+                        max_time = max(max_time, rtt)
+                    except Exception as e:
+                        print(f"inside of for p in ports Error: {e}")
+                        continue
+            except Exception as e:
+                print(f"rtt error: {e}")
+        return [min_time, max_time]
+
+
 
     def geo_locations(self, ip_addresses: List[str]) -> List[str]:
         pass

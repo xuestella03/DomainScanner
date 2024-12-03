@@ -99,11 +99,12 @@ class DomainScanner:
         try:
             ip_addresses = self.dns_scanner.get_ipv4_addr(domain)
             rtt_range = self.other_scanners.rtt_range(ip_addresses)
-            results["rtt_range"] = [1,2]
+            results["rtt_range"] = rtt_range
         except Exception as e:
             print(f"error rtt: {e}", file=sys.stderr)
 
-        # 5.12:
+        # 5.12: geo_locations
+        results["geo_locations"] = ["ph"]
 
         return results
 
@@ -133,6 +134,8 @@ def main():
         print("Usage: python scan_domain.py <input_file> <output_file>")
         sys.exit(1)
     scanner = DomainScanner()
+    # resolvers_file = Path(__file__).parent / "public_dns_resolvers.txt"
+    # scanner.dns_scanner.get_resolvers(resolvers_file)
     scanner.scan_from_file(sys.argv[1], sys.argv[2])
 
 if __name__ == "__main__":

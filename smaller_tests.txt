@@ -1,3 +1,4 @@
 ebay.com
 google.com
-http://insecure.stevetarzia.com/
+insecure.stevetarzia.com
+stevetarzia.com

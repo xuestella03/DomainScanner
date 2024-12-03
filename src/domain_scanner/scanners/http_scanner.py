@@ -42,9 +42,9 @@ class HTTPScanner(Base):
 
             # insecure
             if response:
-                res[1] = False
-            else:
                 res[1] = True
+            else:
+                res[1] = False
 
             # decode response for server, redirect, and hsts
             header_bytes = response.split(b'\r\n\r\n')[0]

@@ -10,8 +10,8 @@ DomainScanner/
 │       │   ├── dns_scanner.py
 │       │   └── http_scanner.py
 │       └── utils/
-│           not sure what goes in here
 ├── requirements.txt
+├── public_dns_resolvers.txt
 ├── .gitignore
 ├── outputs.json
 ├── scan.py

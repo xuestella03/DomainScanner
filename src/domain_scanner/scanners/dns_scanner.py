@@ -8,7 +8,7 @@ class DNSScanner(Base):
         super().__init__()
 
         # change this to read file
-        self.dns_resolvers = ["8.8.8.8"]
+        self.dns_resolvers = ["208.67.222.222", "1.1.1.1", "8.8.8.8", "8.26.56.26", "9.9.9.9", "64.6.65.6", "185.228.168.168"]
 
     def get_ipv4_addr(self, domain: str) -> List[str]:
         """
@@ -69,7 +69,7 @@ class DNSScanner(Base):
 
         return addresses
 
-    def get_resolvers(self, file: str) -> None:
+    def get_resolvers(self, file) -> None:
         """
         load the list of resolvers from a file
         :param file:
