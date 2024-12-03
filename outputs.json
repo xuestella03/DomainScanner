@@ -1,0 +1,224 @@
+{
+    "en.wikipedia.org": {
+        "geo_locations": [
+            "ph"
+        ],
+        "hsts": false,
+        "http_server": "HAProxy",
+        "insecure_http": true,
+        "ipv4_addresses": [
+            " 8.26.56.26",
+            " 8.8.8.8",
+            " 1.1.1.1",
+            " 185.228.168.168",
+            " 208.67.222.222",
+            " 9.9.9.9",
+            " 64.6.65.6",
+            " 2620:0:861:ed1a::1"
+        ],
+        "ipv6_addresses": [
+            " 8.26.56.26",
+            " 8.8.8.8",
+            " 1.1.1.1",
+            " 185.228.168.168",
+            " 208.67.222.222",
+            " 9.9.9.9",
+            " 64.6.65.6",
+            " 2620:0:861:ed1a::1"
+        ],
+        "rdns_names": [
+            "ns1.recursive.dnsbycomodo.com",
+            "dns.google",
+            "one.one.one.one",
+            "family-filter-dns.cleanbrowsing.org",
+            "dns.sse.cisco.com",
+            "dns9.quad9.net",
+            "rec1pubns2.ultradns.net",
+            "text-lb.eqiad.wikimedia.org"
+        ],
+        "redirect_to_https": true,
+        "root_ca": "Let's Encrypt, CN = E6",
+        "rtt_range": [
+            3.9997100830078125,
+            16.547679901123047
+        ],
+        "scan_time": 1733196393.247734,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
+    },
+    "facebook.com": {
+        "geo_locations": [
+            "ph"
+        ],
+        "hsts": false,
+        "http_server": "proxygen-bolt",
+        "insecure_http": true,
+        "ipv4_addresses": [
+            " 8.26.56.26",
+            " 64.6.65.6",
+            " 2a03:2880:f357:1:face:b00c:0:25de",
+            " 8.8.8.8",
+            " 1.1.1.1",
+            " 185.228.168.168",
+            " 208.67.222.222",
+            " 9.9.9.9",
+            " 2a03:2880:f175:181:face:b00c:0:25de",
+            " 2a03:2880:f103:83:face:b00c:0:25de",
+            " 2a03:2880:f175:81:face:b00c:0:25de"
+        ],
+        "ipv6_addresses": [
+            " 8.26.56.26",
+            " 64.6.65.6",
+            " 2a03:2880:f357:1:face:b00c:0:25de",
+            " 8.8.8.8",
+            " 1.1.1.1",
+            " 185.228.168.168",
+            " 208.67.222.222",
+            " 9.9.9.9",
+            " 2a03:2880:f175:181:face:b00c:0:25de",
+            " 2a03:2880:f103:83:face:b00c:0:25de",
+            " 2a03:2880:f175:81:face:b00c:0:25de"
+        ],
+        "rdns_names": [
+            "ns1.recursive.dnsbycomodo.com",
+            "rec1pubns2.ultradns.net",
+            "edge-star-mini6-shv-03-ord5.facebook.com",
+            "dns.google",
+            "one.one.one.one",
+            "family-filter-dns.cleanbrowsing.org",
+            "dns.umbrella.com",
+            "dns9.quad9.net",
+            "edge-star-mini6-shv-02-ord5.facebook.com",
+            "edge-star-mini6-shv-01-iad3.facebook.com",
+            "edge-star-mini6-shv-01-ord5.facebook.com"
+        ],
+        "redirect_to_https": true,
+        "root_ca": "DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 High Assurance Server CA",
+        "rtt_range": [
+            3.9403438568115234,
+            8.508920669555664
+        ],
+        "scan_time": 1733196422.067182,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
+    },
+    "twitter.com": {
+        "geo_locations": [
+            "ph"
+        ],
+        "hsts": false,
+        "http_server": "tsa_b",
+        "insecure_http": true,
+        "ipv4_addresses": [
+            " 8.26.56.26",
+            " 64.6.65.6",
+            " 8.8.8.8",
+            " 1.1.1.1",
+            " 185.228.168.168",
+            " 104.244.42.65",
+            " 208.67.222.222",
+            " 104.244.42.193",
+            " 9.9.9.9",
+            " 104.244.42.129",
+            " 104.244.42.1"
+        ],
+        "ipv6_addresses": [
+            " 8.26.56.26",
+            " 8.8.8.8",
+            " 1.1.1.1",
+            " 185.228.168.168",
+            " 208.67.222.222",
+            " 9.9.9.9",
+            " 64.6.65.6"
+        ],
+        "rdns_names": [
+            "ns1.recursive.dnsbycomodo.com",
+            "dns.google",
+            "one.one.one.one",
+            "family-filter-dns.cleanbrowsing.org",
+            "resolver1.opendns.com",
+            "dns9.quad9.net",
+            "rec1pubns2.ultradns.net"
+        ],
+        "redirect_to_https": true,
+        "root_ca": "DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+        "rtt_range": [
+            3.9992332458496094,
+            10.509967803955078
+        ],
+        "scan_time": 1733196407.274373,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
+    },
+    "youtube.com": {
+        "geo_locations": [
+            "ph"
+        ],
+        "hsts": false,
+        "http_server": "ESF",
+        "insecure_http": true,
+        "ipv4_addresses": [
+            " 8.26.56.26",
+            " 8.8.8.8",
+            " 1.1.1.1",
+            " 2607:f8b0:4009:801::200e",
+            " 185.228.168.168",
+            " 2607:f8b0:4009:802::200e",
+            " 208.67.222.222",
+            " 2607:f8b0:4004:c17::88",
+            " 9.9.9.9",
+            " 2607:f8b0:4009:81b::200e",
+            " 2607:f8b0:4009:809::200e",
+            " 64.6.65.6",
+            " 2607:f8b0:4009:81a::200e"
+        ],
+        "ipv6_addresses": [
+            " 8.26.56.26",
+            " 2607:f8b0:4009:80a::200e",
+            " 8.8.8.8",
+            " 1.1.1.1",
+            " 2607:f8b0:4009:80b::200e",
+            " 185.228.168.168",
+            " 2607:f8b0:4004:c17::be",
+            " 2607:f8b0:4009:802::200e",
+            " 208.67.222.222",
+            " 2607:f8b0:4009:805::200e",
+            " 9.9.9.9",
+            " 2607:f8b0:4009:806::200e",
+            " 64.6.65.6",
+            " 2607:f8b0:4009:81a::200e"
+        ],
+        "rdns_names": [
+            "pd-in-f190.1e100.net",
+            "ns1.recursive.dnsbycomodo.com",
+            "ord37s32-in-x0e.1e100.net",
+            "dns.google",
+            "one.one.one.one",
+            "ord30s22-in-x0e.1e100.net",
+            "family-filter-dns.cleanbrowsing.org",
+            "ord37s52-in-x0e.1e100.net",
+            "dns.opendns.com",
+            "dns9.quad9.net",
+            "ord38s32-in-x0e.1e100.net",
+            "ord31s22-in-x0e.1e100.net",
+            "rec1pubns2.ultradns.net"
+        ],
+        "redirect_to_https": true,
+        "root_ca": "Google Trust Services LLC, CN = GTS Root R1",
+        "rtt_range": [
+            6.506443023681641,
+            11.011600494384766
+        ],
+        "scan_time": 1733196377.0905943,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
+    }
+}

@@ -63,9 +63,13 @@ class DNSScanner(Base):
             # skip if empty
             if not line.strip():
                 continue
-            if line.strip().startswith("Addresses: "):
-                ip = line.strip().split("Addresses: ")[1]
-                addresses.append(ip)
+            # if line.strip().startswith("Addresses: "):
+                # ip = line.strip().split("Addresses: ")[1]
+                # addresses.append(ip)
+            if line.startswith("Addresses:") or line.startswith("Address:"):
+                parts = line.split(": ")
+                if len(parts) > 1:
+                    addresses.append(parts[1])
 
         return addresses
 
