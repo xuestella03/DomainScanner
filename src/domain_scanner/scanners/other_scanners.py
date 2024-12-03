@@ -1,5 +1,6 @@
 from typing import List, Optional, Tuple
 from .base import Base
+import re
 # import maxminddb
 
 class MoreScanners(Base):
@@ -69,6 +70,15 @@ class MoreScanners(Base):
                 command = ["sh", "-c", f"time echo -e '\\x1dclose\\x0d' | telnet {addr} {port}"]
                 result = self.run_command(command)
                 print(result)
+                match = re.search(r"real\s+(\d+)m(\d+\.\d+)s", result)
+                if match:
+                    minutes = int(match.group(1))
+                    seconds = float(match.group(2))
+                    rtt = (minutes * 60 + seconds) * 1000  # Convert to milliseconds
+
+                    # Update min and max RTT
+                    min_time = min(min_time, rtt)
+                    max_time = max(max_time, rtt)
 
         return [min_time, max_time]
 
