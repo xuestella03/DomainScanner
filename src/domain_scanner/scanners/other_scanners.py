@@ -1,6 +1,7 @@
 from typing import List, Optional, Tuple
 from .base import Base
 import re
+import subprocess
 # import maxminddb
 
 class MoreScanners(Base):
@@ -59,28 +60,38 @@ class MoreScanners(Base):
         return res
 
     def rtt_range(self, ip_addresses: List[str]):
-        min_time = float('inf')
-        max_time = 0
-        for addr in ip_addresses:
-            for port in ["80", "22", "443"]:
-                # command = ["sh", "-c", "\"time", "echo", "-e", "'\x1dclose\ x0d'", "|", "telnet", addr, port, "\""]
-                # command = ["sh -c \"time echo -e \'\\x1dclose\\x0d\' | telnet", addr, port, "\""]
-                # command = f'sh -c "time echo -e \'\\x1dclose\\x0d\' | telnet {addr} {port}"'
-                # command = f"sh -c \"time echo -e '\\x1dclose\\x0d' | telnet {addr} {port}\""
-                command = ["sh", "-c", f"time echo -e '\\x1dclose\\x0d' | telnet {addr} {port}"]
-                result = self.run_command(command)
-                print(result)
-                match = re.search(r"real\s+(\d+)m(\d+\.\d+)s", result)
-                if match:
-                    minutes = int(match.group(1))
-                    seconds = float(match.group(2))
-                    rtt = (minutes * 60 + seconds) * 1000  # Convert to milliseconds
-
-                    # Update min and max RTT
-                    min_time = min(min_time, rtt)
-                    max_time = max(max_time, rtt)
-
-        return [min_time, max_time]
+        # min_time = float('inf')
+        # max_time = 0
+        # for addr in ip_addresses:
+        #     for port in ["80", "22", "443"]:
+        #         # command = ["sh", "-c", "\"time", "echo", "-e", "'\x1dclose\ x0d'", "|", "telnet", addr, port, "\""]
+        #         # command = ["sh -c \"time echo -e \'\\x1dclose\\x0d\' | telnet", addr, port, "\""]
+        #         # command = f'sh -c "time echo -e \'\\x1dclose\\x0d\' | telnet {addr} {port}"'
+        #         # command = f"sh -c \"time echo -e '\\x1dclose\\x0d' | telnet {addr} {port}\""
+        #         addr2 = addr.replace(":", ".")
+        #         command = [f"telnet{addr2} {port}"]
+        #         print(command)
+        #         result = self.run_command(command)
+        #         # result = subprocess.call(
+        #         #     command,
+        #         #     timeout=2,
+        #         #     stderr=subprocess.STDOUT,
+        #         #     stdout=subprocess.PIPE,
+        #         #     text=True
+        #         # )
+        #         print("hello", result)
+        #         # match = re.search(r"real\s+(\d+)m(\d+\.\d+)s", result)
+        #         # if match:
+        #         #     minutes = int(match.group(1))
+        #         #     seconds = float(match.group(2))
+        #         #     rtt = (minutes * 60 + seconds) * 1000  # Convert to milliseconds
+        #         #
+        #         #     # Update min and max RTT
+        #         #     min_time = min(min_time, rtt)
+        #         #     max_time = max(max_time, rtt)
+        #
+        # return [min_time, max_time]
+        pass
 
     def geo_locations(self, ip_addresses: List[str]) -> List[str]:
         pass
